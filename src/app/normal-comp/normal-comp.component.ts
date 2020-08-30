@@ -8,8 +8,7 @@ import {Component, OnInit, Output, EventEmitter} from '@angular/core';
 export class NormalCompComponent implements OnInit {
   normalTextInput = 'normal';
   @Output() changed = new EventEmitter();
-  normalChange(e): void {
-    const value = e.target.value;
+  normalChange(value): void {
     this.normalTextInput = value;
     this.changed.emit(value);
   }

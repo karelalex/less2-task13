@@ -10,8 +10,8 @@ export class AppComponent {
   title = 'less2-task13';
   normalComponentText = '';
   pushComponentText = '';
-  mainChange(e): void {
-    this.mainInputText = e.target.value;
+  mainChange(value): void {
+    this.mainInputText = value;
   }
   normalChange(value): void {
     this.normalComponentText = value;

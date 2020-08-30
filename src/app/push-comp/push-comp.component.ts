@@ -7,10 +7,10 @@ import {Component, OnInit, ChangeDetectionStrategy, Output, EventEmitter, Input}
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PushCompComponent implements OnInit {
+  @Input() baba = '';
   pushTextInput = 'push';
   @Output() changed = new EventEmitter();
-  pushChange(e): void {
-    const value = e.target.value;
+  pushChange(value): void {
     this.pushTextInput = value;
     this.changed.emit(value);
   }

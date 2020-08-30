@@ -1,7 +1,7 @@
 <div>
 
   <label>Главная инпута
-    <input [value]="mainInputText" (keyup)="mainChange($event)">
+    <input [ngModel]="mainInputText" (ngModelChange)="mainChange($event)">
   </label>
 
   <p>Вот что в главной инпуте {{mainInputText}}</p>

@@ -1,7 +1,7 @@
 <div>
 
   <label>Пуш инпута
-    <input [value]="pushTextInput" (keyup)="pushChange($event)">
+    <input [ngModel]="pushTextInput" (ngModelChange)="pushChange($event)" />
   </label>
 
   <p>Вот что в пуш компоненте внутри него {{pushTextInput}}</p>

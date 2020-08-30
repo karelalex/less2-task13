@@ -1,7 +1,7 @@
 <div>
 
   <label>Нормальная инпута
-    <input [value]="normalTextInput" (keyup)="normalChange($event)">
+    <input [ngModel]="normalTextInput" (ngModelChange)="normalChange($event)">
   </label>
 
   <p>Вот что в нормальном компоненте внутри него {{normalTextInput}}</p>
